@@ -1,0 +1,48 @@
+{
+  "run_id": "sig_20260408_151026_b2565b",
+  "site_url": "https://bharatmcp.com",
+  "signal": {
+    "site_url": "https://bharatmcp.com",
+    "signal_type": "slow_page",
+    "page": "/",
+    "endpoint": null,
+    "severity": "high",
+    "metadata": null
+  },
+  "timestamp": "2026-04-08T15:10:37.368594",
+  "checks_run": [
+    "perf",
+    "ui"
+  ],
+  "results": [
+    {
+      "check_type": "ui",
+      "target": "https://bharatmcp.com/",
+      "passed": true,
+      "issue": null,
+      "detail": null,
+      "duration_ms": null,
+      "screenshot": null
+    },
+    {
+      "check_type": "perf",
+      "target": "https://bharatmcp.com/",
+      "passed": false,
+      "issue": "Slow TTFB: 1464ms (threshold: 800ms)",
+      "detail": null,
+      "duration_ms": 1464.37,
+      "screenshot": null
+    },
+    {
+      "check_type": "perf",
+      "target": "https://bharatmcp.com/",
+      "passed": true,
+      "issue": null,
+      "detail": null,
+      "duration_ms": 1464.67,
+      "screenshot": null
+    }
+  ],
+  "total_issues": 1,
+  "summary": "1 issue(s) found on /"
+}

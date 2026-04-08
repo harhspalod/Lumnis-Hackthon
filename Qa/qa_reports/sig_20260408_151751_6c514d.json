@@ -1,0 +1,57 @@
+{
+  "run_id": "sig_20260408_151751_6c514d",
+  "site_url": "https://bharatmcp.com",
+  "signal": {
+    "site_url": "https://bharatmcp.com",
+    "signal_type": "slow_page",
+    "page": "/",
+    "endpoint": null,
+    "severity": "high",
+    "metadata": null
+  },
+  "timestamp": "2026-04-08T15:18:14.739660",
+  "checks_run": [
+    "perf",
+    "ui"
+  ],
+  "results": [
+    {
+      "check_type": "ui",
+      "target": "https://bharatmcp.com/",
+      "passed": true,
+      "issue": null,
+      "detail": null,
+      "duration_ms": null,
+      "screenshot": null
+    },
+    {
+      "check_type": "perf",
+      "target": "https://bharatmcp.com/",
+      "passed": false,
+      "issue": "Slow TTFB: 3812ms (threshold: 800ms)",
+      "detail": null,
+      "duration_ms": 3811.95,
+      "screenshot": null
+    },
+    {
+      "check_type": "perf",
+      "target": "https://bharatmcp.com/",
+      "passed": false,
+      "issue": "Slow page load: 3812ms (threshold: 3000ms)",
+      "detail": null,
+      "duration_ms": 3812.04,
+      "screenshot": null
+    },
+    {
+      "check_type": "perf",
+      "target": "https://bharatmcp.com/static/js/main.bc1c5b3c.js",
+      "passed": false,
+      "issue": "Slow asset: 1824ms",
+      "detail": null,
+      "duration_ms": 1824.19,
+      "screenshot": null
+    }
+  ],
+  "total_issues": 3,
+  "summary": "3 issue(s) found on /"
+}

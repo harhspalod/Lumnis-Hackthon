@@ -1,0 +1,39 @@
+{
+  "run_id": "sig_20260408_151514_ba2b39",
+  "site_url": "https://bharatmcp.com",
+  "signal": {
+    "site_url": "https://bharatmcp.com",
+    "signal_type": "slow_page",
+    "page": "/",
+    "endpoint": null,
+    "severity": "high",
+    "metadata": null
+  },
+  "timestamp": "2026-04-08T15:15:14.281592",
+  "checks_run": [
+    "perf",
+    "ui"
+  ],
+  "results": [
+    {
+      "check_type": "ui",
+      "target": "https://bharatmcp.com/",
+      "passed": false,
+      "issue": "UI check failed: HTTPSConnectionPool(host='bharatmcp.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='bharatmcp.com', port=443): Failed to resolve 'bharatmcp.com' ([Errno -3] Temporary failure in name resolution)\"))",
+      "detail": null,
+      "duration_ms": null,
+      "screenshot": null
+    },
+    {
+      "check_type": "perf",
+      "target": "https://bharatmcp.com/",
+      "passed": false,
+      "issue": "Perf check failed: HTTPSConnectionPool(host='bharatmcp.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='bharatmcp.com', port=443): Failed to resolve 'bharatmcp.com' ([Errno -3] Temporary failure in name resolution)\"))",
+      "detail": null,
+      "duration_ms": null,
+      "screenshot": null
+    }
+  ],
+  "total_issues": 2,
+  "summary": "2 issue(s) found on /"
+}
